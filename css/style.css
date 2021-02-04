@@ -1,0 +1,63 @@
+/* Reset */
+body,
+h1,
+h2,
+h3,
+ul,
+p {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #252525;
+}
+
+/* Menu */
+
+.menu {
+  background: #252525;
+  padding: 20px 0;
+}
+
+.menu-container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* clearfix */
+.menu-container::after,
+.menu-container::before {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+a.menu-logo {
+  display: block;
+  float: left;
+  margin-left: 10px;
+}
+
+.menu-nav {
+  float: right;
+  margin-right: 10px;
+}
+
+.menu-nav li {
+  display: inline-block;
+}
+
+.menu-nav a {
+  border: 1px solid blue;
+  display: block;
+  padding: 10px;
+  color: #fff;
+  font-size: 1.125em; /* ou 18px. Cálculo 18/16padrão = 1.125*/
+}
